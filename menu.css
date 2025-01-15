@@ -1,0 +1,386 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --card-background: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background-color: var(--card-background);
+    padding: 0 2rem;
+    /* height: 60px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+header h1 {
+    color: white;
+    margin: 0;
+}
+header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s;
+}
+header nav ul li a:hover {
+    color: var(--primary-color);
+}
+header .login-signup {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: autu;
+}
+header .btn-username {
+    color: var(--text-color);
+    background: var(--primary-color);
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+.menu-container h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.search-bar input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid var(--primary-color);
+}
+.food-item {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card .card-title {
+    color: #007bff;
+}
+.pagination-container a {
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.pagination-container a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-select {
+background-color: #007bff;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.btn-select:hover {
+background-color: #0056b3;
+}
+
+.login-signup .btn {
+    background-color: var(--text-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s;
+    white-space: nowrap;
+    width: auto;
+}
+
+.login-signup .btn:hover {
+    transform: translateY(-2px);
+}
+nav {
+    width: 100%;
+}
+.nav {
+    width: auto;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+  }
+  
+  nav ul li a {
+    position: relative;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  nav ul li a.active {
+    background: rgba(76, 175, 80, 0.1);
+    color: var(--primary-color);
+  }
+
+  header {
+    background-color: var(--card-background);
+    padding: 1rem 2rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: var(--primary-color);
+  }
+  
+  .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .pagination {
+    margin: 5px 0; /* Reduce margin for spacing */
+}
+.pagination .page-item .page-link {
+    border-radius: 3px; /* Smaller rounded corners */
+    padding: 5px 10px; /* Smaller padding */
+    font-size: 0.9rem; /* Smaller font size */
+}
+.pagination .page-item.active .page-link {
+    background-color: #007bff; /* Active page background color */
+    color: white; /* Active page text color */
+}
+.pagination .page-item .page-link:hover {
+    background-color: #0056b3; /* Hover effect */
+    color: white; /* Hover text color */
+}
+.menu-container h1 {
+    color: #4CAF50; /* Changed from #007bff to #4CAF50 */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card .card-title {
+    color: #4CAF50; /* Changed from #007bff to #4CAF50 */
+}
+.pagination-container a {
+    color: #4CAF50; /* Changed from #007bff to #4CAF50 */
+    border: 1px solid #4CAF50; /* Changed from #007bff to #4CAF50 */
+}
+.pagination-container a:hover {
+    background-color: #4CAF50; /* Changed from #007bff to #4CAF50 */
+    color: white;
+}
+.btn-select {
+    background-color: #4CAF50; /* Changed from #007bff to #4CAF50 */
+    color: white;
+}
+.btn-select:hover {
+    background-color: #388E3C; /* Darker shade for hover effect */
+}
+.login-signup .btn {
+    background-color: #4CAF50; /* Changed from var(--primary-color) to #4CAF50 */
+}
+.login-signup .btn:hover {
+    transform: translateY(-2px);
+}
+.food-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px; /* Reduced margin between cards */
+    flex: 0 0 30%; /* Set flex-basis to 30% for three items in a row */
+}
+.card {
+    border-radius: 15px; /* Existing style */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; /* Existing style */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Existing style */
+    width: 100%; /* Set card width to 100% of the column */
+}
+.row {
+    display: flex; /* Use flexbox for the row */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: space-between; /* Space between items */
+    gap: 15px; /* Reduced gap between cards */
+}
+.btn, .page-link {
+    transition: outline 0.3s;
+}
+
+.btn:focus, .page-link:focus {
+    outline: 2px solid var(--primary-color); /* Change to your primary color */
+    outline-offset: 2px;
+}
+
+footer {
+    background-color: black; /* Set footer background to black */
+    color: white; /* Set text color to white for contrast */
+    padding: 20px 0; /* Padding for spacing */
+    width: 100vw; /* Set footer width to full viewport width */
+    position: relative; /* Ensure it stays in place */
+    left: 0; /* Align to the left */
+    bottom: 0; /* Align to the bottom */
+    margin-left: calc(-50vw + 50%); /* Center the footer */
+}
+
+footer h5 {
+    font-weight: bold; /* Bold headings */
+}
+
+footer a {
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Spacing between icons */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-icons {
+    margin: 10px 0; /* Spacing for social icons */
+}
+
+.social-icon {
+    color: white; /* Set icon color to white */
+    font-size: 1.5rem; /* Icon size */
+    margin: 0 10px; /* Spacing between icons */
+}
+
+.pagination-container {
+    margin: 20px auto; /* Center the container */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.pagination {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the pagination items */
+    padding: 0; /* Remove default padding */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.pagination .page-item {
+    margin: 0 5px; /* Space between pagination items */
+}
+
+.pagination .page-link {
+    padding: 5px 10px; /* Adjust padding for smaller buttons */
+    font-size: 0.9rem; /* Smaller font size */
+    min-width: 30px; /* Set a minimum width for the links */
+    text-align: center; /* Center text within the link */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.login-signup .btn-logout {
+    background-color: #dc3545;
+    color: white;
+}
+
+.login-signup .btn-logout:hover {
+    background-color: #bb2d3b;
+    color: white;
+    transform: translateY(-2px);
+}

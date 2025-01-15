@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriTracks - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="c_script.js" defer></script>
+  <!-- Add Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Add Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <i class="fas fa-leaf"></i>
+      <h1>NutriTracks</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="login.html"><i class="fas fa-search"></i> Search Items</a></li>
+        <li><a href="login.html"><i class="fas fa-utensils"></i> Recipes</a></li>
+        <li><a href="login.html"><i class="fas fa-carrot"></i> Fruits & Vegetables</a></li>
+        <li><a href="login.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+    <div class="login-signup">
+      <a href="login.html" class="btn"><i class="fas fa-user"></i> Login/Signup</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Track Your Nutrition, <span class="highlight">Explore Healthy Choices!</span></h2>
+        <p class="hero-description">
+          Discover a healthier lifestyle by tracking your nutrition and exploring our vast collection of recipes and ingredients.
+        </p>
+        <form class="search-bar" action="search_results.php" method="GET">
+          <div class="search-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" name="query" placeholder="Search items, recipes, or categories..." />
+            <button type="submit">Search</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="features">
+      <div class="feature-card">
+        <i class="fas fa-chart-line feature-icon"></i>
+        <h3>Personalized Nutrition</h3>
+        <p>Track your daily intake and meet your dietary needs with customized recommendations.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-th-large feature-icon"></i>
+        <h3>Explore Categories</h3>
+        <p>Browse through our extensive collection of recipes, fruits, vegetables, and more.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-sliders-h feature-icon"></i>
+        <h3>Advanced Query System</h3>
+        <p>Find nutritional values or recipes tailored to your preferences with our smart search.</p>
+      </div>
+    </section>
+    <section class="stats">
+      <div class="stat-container">
+        <div class="stat-item">
+          <i class="fas fa-users"></i>
+          <h3>10K+</h3>
+          <p>Active Users</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-utensils"></i>
+          <h3>5000+</h3>
+          <p>Healthy Recipes</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-apple-alt"></i>
+          <h3>2000+</h3>
+          <p>Food Items</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-star"></i>
+          <h3>4.8/5</h3>
+          <p>User Rating</p>
+        </div>
+      </div>
+    </section>
+    <section class="how-it-works">
+      <h2>How It Works</h2>
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-number">1</div>
+          <i class="fas fa-user-plus"></i>
+          <h3>Create Account</h3>
+          <p>Sign up for free and set your nutrition goals</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <i class="fas fa-search"></i>
+          <h3>Track Foods</h3>
+          <p>Search and log your daily food intake</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <i class="fas fa-chart-line"></i>
+          <h3>Monitor Progress</h3>
+          <p>View insights and achieve your goals</p>
+        </div>
+      </div>
+    </section>
+    <section class="featured-categories">
+      <h2>Popular Categories</h2>
+      <div class="category-grid">
+        <a href="#" class="category-card breakfast">
+          <i class="fas fa-coffee"></i>
+          <h3>Breakfast</h3>
+        </a>
+        <a href="#" class="category-card lunch">
+          <i class="fas fa-hamburger"></i>
+          <h3>Lunch</h3>
+        </a>
+        <a href="#" class="category-card dinner">
+          <i class="fas fa-utensils"></i>
+          <h3>Dinner</h3>
+        </a>
+        <a href="#" class="category-card snacks">
+          <i class="fas fa-cookie"></i>
+          <h3>Snacks</h3>
+        </a>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="cta-content">
+        <h2>Ready to Start Your Health Journey?</h2>
+        <p>Join thousands of users who have transformed their lives with NutriTracks</p>
+        <a href="signup.html" class="btn btn-large">Get Started Free <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <p>&copy; 2024 NutriTracks. All rights reserved.</p>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

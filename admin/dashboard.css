@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .button-container {
+    margin-bottom: 20px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  iframe {
+    width: 90%;
+    height: 600px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden initially */
+  }
+
+  iframe.visible {
+    display: block; /* Becomes visible when the class is added */
+  }

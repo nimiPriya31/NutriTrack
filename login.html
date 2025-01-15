@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - NutriTracks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <i class="fas fa-leaf"></i>
+      <h1>NutriTracks</h1>
+    </div>
+    <p class="subtitle">Welcome back! Please login to your account.</p>
+    <form id="loginForm" action="server/login_process.php" method="POST">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        <div id="emailError" class="error-message">
+          Please enter a valid email.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        <div id="passwordError" class="error-message">
+          Password cannot be empty.
+        </div>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <div class="link">
+      Don't have an account? <a href="signup.html">Sign up here</a>.
+    </div>
+    <div class="link">
+      <a href="forgot_password.html">Forgot your password?</a>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+
+</html>

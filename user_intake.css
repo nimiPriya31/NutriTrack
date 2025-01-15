@@ -1,0 +1,329 @@
+/* user_intake.css */
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --text-color: #333;
+    --background-color: #f5f7fa;
+    --card-background: #ffffff;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: var(--card-background);
+    padding: 1rem 2rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 0;
+    font-weight: bold;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav {
+    width: auto;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a,
+.nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: var(--text-color) !important;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a.active,
+.nav-link.active {
+    background: rgba(76, 175, 80, 0.1);
+    color: var(--primary-color) !important;
+}
+
+.login-signup {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.login-signup .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s;
+    white-space: nowrap;
+    width: auto;
+}   
+
+.login-signup .btn:hover {
+    transform: translateY(-2px);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.login-signup .btn-logout {
+    background-color: #dc3545 !important;
+    color: white;
+}
+
+/* Rest of the existing styles */
+.container {
+    max-width: 1200px;
+    padding: 1rem;
+}
+
+/* Lifetime Stats */
+.lifetime-stats {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.lifetime-stats .card {
+    background: var(--background-color);
+}
+
+/* Date Picker Styles */
+.input-group {
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+    background: white;
+    padding: 0.8rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.input-group input[type="date"] {
+    border: 2px solid #e1e5ee;
+    padding: 0.6rem;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.input-group input[type="date"]:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.input-group .btn {
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+}
+
+/* Card Styles */
+.card {
+    background: var(--card-background);
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+/* Grid Spacing */
+.row {
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+}
+
+.col-md-3, .col-md-4 {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/* Daily Intake Section */
+.daily-intake {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.daily-intake .card {
+    margin-bottom: 1rem;
+}
+
+/* Nutrition Values */
+.nutrition-info {
+    margin-top: 0.8rem;
+}
+
+.card-body p {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-body p strong {
+    display: inline-flex;
+    align-items: center;
+    width: 110px;
+    color: #666;
+}
+
+.card-body p i {
+    width: 20px;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(45deg, #1a1a1a, #2c2c2c);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.social-icons {
+    margin: 1rem 0;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.4rem;
+    margin: 0 12px;
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0.8rem;
+    }
+    
+    .lifetime-stats,
+    .daily-intake {
+        padding: 1rem;
+    }
+    
+    .card-title {
+        font-size: 0.9rem;
+    }
+    
+    .card-body p {
+        font-size: 0.85rem;
+    }
+    
+    .display-6 {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* Nutrition Graphs Section */
+.nutrition-graphs {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.nutrition-graphs .card {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nutrition-graphs .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.nutrition-graphs canvas {
+    flex: 1;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 350px;
+}
