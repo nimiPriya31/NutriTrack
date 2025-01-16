@@ -1,4 +1,7 @@
 <?php
+
+// Start the session
+session_start();
 // Database configuration
 include('connection.php');
 // Check if the form is submitted
